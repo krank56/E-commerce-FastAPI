@@ -8,7 +8,7 @@ class User(Model):
     username = fields.CharField(max_length=30, null=False, unique=True)
     email = fields.CharField(max_length=200, null=False, unique=True)
     password = fields.CharField(max_length=200, null=False)
-    is_verifide = fields.BooleanField(default=False)
+    is_verified = fields.BooleanField(default=False)
     join_date = fields.DatetimeField(default=datetime.utcnow)
 
 
